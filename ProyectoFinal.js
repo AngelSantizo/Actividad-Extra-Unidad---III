@@ -2,9 +2,10 @@ var verirficacion = false
 var PrecioBase = 2000
 
 while(verirficacion == false){ //Preguntamos al usuario su edad para verificacion
-    var edad = parseInt(prompt("Ingresar Edad: "))
-    
-    if(edad >= 18){ //la condicion para seguir es que sea mayor de 18 
+    var edadAsegurado = parseInt(prompt("Ingresar Edad: "));
+    var edadConyuge = parseInt(prompt("Ingresar Edad: "));
+
+    if(edadAsegurado >= 18){ //la condicion para seguir es que sea mayor de 18 
         verirficacion = true
     }else{
         verirficacion = false
